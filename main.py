@@ -42,7 +42,7 @@ def get_weather(region):
     if response["code"] == "404":
         print("推送消息失败，请检查地区名是否有误！")
         os.system("pause")
-        sys.exit(1)
+        sys.exit()
     elif response["code"] == "401":
         print("推送消息失败，请检查和风天气key是否正确！")
         os.system("pause")
